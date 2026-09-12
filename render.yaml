@@ -1,0 +1,8 @@
+﻿services:
+  - type: web
+    name: mediflow-ai
+    runtime: python
+    buildCommand: echo "MediFlow AI has no Python dependencies to install"
+    startCommand: python backend/server.py
+    healthCheckPath: /api/health
+    autoDeploy: true
